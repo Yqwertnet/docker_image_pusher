@@ -16,9 +16,10 @@ jobs:
       - name: Login to Docker registry
         uses: docker/login-action@v2
         with:
-          registry: ${{ secrets.ALIYUN_REGISTRY }}
-          username: ${{ secrets.ALIYUN_REGISTRY_USER }}
-          password: ${{ secrets.ALIYUN_REGISTRY_PASSWORD }}
+          SPAED：   ${{ ALIYUN_REGISTRY }}
+          registry: ${{ ALIYUN_REGISTRY }}
+          username: ${{ ALIYUN_REGISTRY_USER }}
+          password: ${{ ALIYUN_REGISTRY_PASSWORD }}
 
       - name: Build and push Docker image
         run: |
