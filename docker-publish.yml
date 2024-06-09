@@ -16,7 +16,7 @@ jobs:
       - name: Login to Docker registry
         uses: docker/login-action@v2
         with:
-          SPAED：   ${{ ALIYUN_REGISTRY }}
+          SPACE：   ${{ ALYUN_NAME_SPACE }}
           registry: ${{ ALIYUN_REGISTRY }}
           username: ${{ ALIYUN_REGISTRY_USER }}
           password: ${{ ALIYUN_REGISTRY_PASSWORD }}
